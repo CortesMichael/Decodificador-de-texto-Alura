@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__image" src="./assets/Frame 6.png" alt="Logo Alura">
+    </header>
+
+    <main class="container">
+        <section class="container__content">
+            <textarea class="container__content__text" cols="41" rows="4" placeholder="Digite seu texto:"></textarea>
+
+            <h6 class="container__content__title">Apenas letras minúsculas e sem acentos.</h6>
+
+            <div class="container__content__buttons">
+                <button class="container__content__buttons__encrypt" onclick="btnEncriptar()">Criptografar</button>
+                <button class="container__content__buttons__decrypt" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="container__decrypt">
+            <textarea class="container__decrypt__text" cols="20" rows="10"></textarea>
+
+            <button class="container__decrypt__button" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
